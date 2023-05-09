@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Вечірні сукні</title>
+  </head>
+  <body>
+    <header class="fixed-menu">
+      <div class="h1">
+        <a class="hh11" href="friends.html"
+          >Отримай бонуси за кожну наступну сукню</a
+        >
+      </div>
+      <div class="h2">
+        <div class="icon-name">
+          <img src="icons8-diamond-100.png" style="height: 60px" alt="" />
+          <p class="title-name">Diamond Evening Gowns</p>
+        </div>
+        <!--<a
+          href="/bootstrap-5.3.0-alpha3-examples/sign-in/index.html"
+          class="user"
+        >
+          <span class="sign_in">SIGN IN</span>
+          <i class="bi bi-person"></i>
+        </a>
+        <a href="" class="heart">
+          <i class="bi bi-heart"></i>
+        </a>
+        <a href="" class="cart">
+          <i class="bi bi-cart"></i>
+        </a>-->
+      </div>
+      <nav>
+        <ul class="menu" id="myMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="evening_dresses.html">Вечірні сукні</a></li>
+          <li><a href="wedding.html">Весільні сукні</a></li>
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="#footer">Контакти</a></li>
+          <li class="search">
+            <a href="#search"><i class="fa fa-search"></i></a>
+          </li>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </ul>
+
+      </nav>
+    </header>
+
+    <main>
+
+      <div class="filter">
+        <label for="filter-by-price">Ціна:</label>
+        <select name="filter-by-price" id="filter-by-price">
+          <option value="">Вибрати</option>
+          <option value="price-low-to-high">Від дешевих до дорогих</option>
+          <option value="price-high-to-low">Від дорогих до дешевих</option>
+        </select>
+  
+        <label for="filter-by-size">Розмір:</label>
+        <select name="filter-by-size" id="filter-by-size">
+          <option value="">Вибрати</option>
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+        </select>
+  
+        <label for="filter-by-color">Колір:</label>
+        <select name="filter-by-color" id="filter-by-color">
+          <option value="">Вибрати</option>
+          <option value="red">Червоний</option>
+          <option value="blue">Синій</option>
+          <option value="yellow">Жовтий</option>
+          <option value="pink">Рожевий</option>
+          <option value="white">Білий</option>
+        </select>
+      </div>
+  
+      <div class="container">
+        <div id="1" class="item blue m">
+          <a href="single-product.html">
+            <div class="featured-item">
+              <img src="dress_img/d5_1.png" alt="" />
+              <h4>Сукня ARWA</h4>
+              <h6>&#8372 3000.00</h6>
+            </div>
+          </a>
+        </div>
+        <div id="2" class="item white l">
+          <a href="single-product.html">
+            <div class="featured-item">
+              <img src="dress_img/d8_1.png" alt="" />
+              <h4>Сукня RENATA</h4>
+              <h6>&#8372 4000.00</h6>
+            </div>
+          </a>
+        </div>
+        <div id="3" class="item yellow l">
+          <a href="single-product.html">
+            <div class="featured-item">
+              <img src="dress_img/d6_1.png" alt="" />
+              <h4>Сукня Lina</h4>
+              <h6>&#8372 5000.00</h6>
+            </div>
+          </a>
+        </div>
+        <div id="4" class="item red xs">
+          <a href="single-product.html">
+            <div class="featured-item">
+              <img src="dress_img/d4_1.png" alt="" />
+              <h4>Сукня Magda</h4>
+              <h6>&#8372 2500.00</h6>
+            </div>
+          </a>
+        </div>
+        <div id="5" class="item pink xl">
+          <a href="single-product.html">
+            <div class="featured-item">
+              <img src="dress_img/d7_1.png" alt="" />
+              <h4>Сукня Cellina</h4>
+              <h6>&#8372 4250.00</h6>
+            </div>
+          </a>
+        </div>
+        <div id="6" class="item red s">
+          <a href="single-product.html">
+            <div class="featured-item">
+              <img src="dress_img/d18_1.png" alt="" />
+              <h4>Сукня Fiorenza</h4>
+              <h6>&#8372 2300.00</h6>
+            </div>
+          </a>
+        </div>
+      </div>
+  
+      <div class="pagination">
+        <ul>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+        </ul>
+        <a href="#">Наступна сторінка</a>
+      </div>
+    </main>
+
+    <footer>
+      <a name="footer">
+        <div class="foot">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3257.868708840036!2d24.023000015227143!3d49.81821690980268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ddedc63f7b9f23%3A0xb22d5424c60e4ad4!2z0JzQuNC90LAsINCf0LvRjNC90L7QstCwLCA1OTUwNQ!5e0!3m2!1sen!2sua!4v1613691055508!5m2!1sen!2sca"
+            width="600"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+          <div class="footer-info">
+            <p style="font-size: 30px">Контакти</p>
+            <p>м. Львів, вул. Івана Франка, 61</p>
+            <p>+380671833517</p>
+            <p>info@rent.dresses.com.ua</p>
+          </div>
+        </div>
+      </a>
+      <div class="hr">
+        <p class="p3">2023 all rights reserved</p>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
